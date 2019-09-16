@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">-->
+    <!-- TODO: Update blank fragment layout -->
+    <!--android:background="#efebe9"
+    android:layout_gravity="center"
+    android:gravity="center"-->
+
+
+    <!--EDIT Button Section android:background="@android:drawable/bottom_bar"-->
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginBottom="10.0dip"
+        android:orientation="horizontal"
+        android:paddingBottom="1.0dip"
+        android:paddingLeft="4.0dip"
+        android:paddingRight="4.0dip"
+        android:paddingTop="5.0dip">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_rounded_blue"
+            android:text="BACK" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_rounded_blue"
+            android:text="UPDATE" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_gravity="fill_horizontal" />
+
+    <TextView
+        android:id="@+id/txt_test"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+        <!--android:background="#efebe9"
+        android:layout_gravity="center"
+        android:gravity="center"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Doctor Name: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <!--android:layout_gravity="center"
+        android:gravity="center"-->
+        <TextView
+            android:id="@+id/txt_doctorname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+        <!--android:background="#efebe9"
+        android:layout_gravity="center"
+        android:gravity="center"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Patch : "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <!--android:layout_gravity="center"
+        android:gravity="center"-->
+        <TextView
+            android:id="@+id/txt_patch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+        <!--android:background="#efebe9"
+        android:layout_gravity="center"
+        android:gravity="center"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Total Active Doctors : "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <!--android:layout_gravity="center"
+        android:gravity="center"-->
+        <TextView
+            android:id="@+id/txt_active_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+        <!--android:background="#efebe9"
+        android:layout_gravity="center"
+        android:gravity="center"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Total Campaign Doctors : "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <!--android:layout_gravity="center"
+        android:gravity="center"-->
+        <TextView
+            android:id="@+id/txt_camp_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <!--DCR Detail Section-->
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/daily_plan_border"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+                <!--mycustom_border_background_shade400-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@string/fontFamily__roboto_regular"
+                    android:gravity="center"
+                    android:text="ACTIVE/INACTIVE DOCTOR"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.014"
+                    android:background="#FFFFFF" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.014"
+                    android:background="#FFFFFF" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+                    <!--android:background="#efebe9"-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_active"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2sp"
+                            android:paddingLeft="6dip"
+                            android:text="Active"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/chk_inactive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2sp"
+                            android:layout_marginLeft="22sp"
+                            android:paddingLeft="6dip"
+                            android:text="Inactive"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="PATCH: "
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="normal" />-->
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vw_dcr_patch"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+                    <!--android:background="#efebe9"-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_campaign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2sp"
+                            android:paddingLeft="6dip"
+                            android:text="Doctor For Campaign Booking"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vw_dcr_agenda"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

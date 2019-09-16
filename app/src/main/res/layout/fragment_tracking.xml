@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vin.myapplication.frag_a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- TODO: Update blank fragment layout -->
+
+        <Button
+            android:id="@+id/btn_all_employee_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ALL EMPLOYEES LIST"
+            android:background="#3F51B5"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:id="@+id/btn_employee_daily_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EMPLOYEE DAILY PLAN"
+            android:background="#3F51B5"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btn_Logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:background="#3F51B5"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</FrameLayout>

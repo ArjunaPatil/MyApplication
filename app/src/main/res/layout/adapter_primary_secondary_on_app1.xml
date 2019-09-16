@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">-->
+
+    <LinearLayout
+        android:id="@+id/activity_live__work"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--From - To Date http://www.codexpedia.com/android/android-nested-recyclerviews-with-expandable-list/-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/mycustom_border_background_for_prim_seco_app_2"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tv_lbl_from_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="-3dp"
+                    android:text="From :"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_txt_from_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-3dp"
+                    android:text="yyyy-mm-dd"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_lbl_to_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="-3dp"
+                    android:text="To :"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_txt_to_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-3dp"
+                    android:text="yyyy-mm-dd"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Employee ABM,RBM,SM,NBM-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/mycustom_border_background_for_prim_seco_app_1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp"><!--android:padding="4dp"-->
+
+                <TextView
+                    android:id="@+id/tv_lbl_emp_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:text="Name:"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15dp"
+                    android:textStyle="bold" /> <!--android:padding="5dp"-->
+
+                <TextView
+                    android:id="@+id/tv_txt_emp_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-3dp"
+                    android:text="Kasim Mevekari"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="#7E55F3"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_lbl_emp_abm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:text="ABM:"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15dp" /> <!--android:padding="5dp"-->
+
+                <TextView
+                    android:id="@+id/tv_txt_emp_abm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="-3dp"
+                    android:text="Pramod Ambi"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7dp"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_lbl_emp_rbm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:text="RBM:"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15dp" /> <!--android:padding="5dp"-->
+
+                <TextView
+                    android:id="@+id/tv_txt_emp_rbm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="-3dp"
+                    android:text="Amol Mohite"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7dp"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_lbl_emp_sm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:text="SM:"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15dp" /> <!--android:padding="5dp"-->
+
+                <TextView
+                    android:id="@+id/tv_txt_emp_sm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="-3dp"
+                    android:text="AAAAAAAAA AAAAAAAAAA"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-7dp"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_lbl_emp_nbm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:text="NBM:"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15dp" /> <!--android:padding="5dp"-->
+
+                <TextView
+                    android:id="@+id/tv_txt_emp_nbm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="-3dp"
+                    android:text="AAAAAAAAA AAAAAAAAAA"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Stockist Name Product List-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/mycustom_border_background_for_prim_seco_app_1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="4dp"><!--android:padding="4dp"-->
+
+                <TextView
+                    android:id="@+id/tv_lbl_stockist_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:text="Stockist Name:"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_txt_stockist_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-3dp"
+                    android:gravity="center"
+                    android:text="Kasim Mevekari"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_txt_count_emp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="[3]"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="#7E55F3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/mycustom_border_background_for_prim_seco_app_2"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:visibility="gone"><!--android:padding="4dp"-->
+
+                <TextView
+                    android:id="@+id/tv_lbl_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="0.60"
+                    android:gravity="center"
+                    android:text="PRODUCT"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_txt_product_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="SALE VALUE(QTY)"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="10sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_txt_product_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="SALE VALUE(QTY)"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="#7E55F3" />
+
+            <ScrollView
+                android:id="@+id/scrollView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal"><!--android:padding="4dp"-->
+
+                    <ListView
+                        android:id="@+id/primary_secondary_on_app_list_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:scrollbars="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/tv_txt_product_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-3dp"
+                            android:layout_weight="0.60"
+                            android:gravity="center"
+                            android:text="Total"
+                            android:textColor="@color/cast_intro_overlay_background_color"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_txt_product_tot_sale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="-3dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="sale value(qty)"
+                            android:textColor="@color/cast_intro_overlay_background_color"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_txt_product_tot_return"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="-3dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="sale value(qty)"
+                            android:textColor="@color/cast_intro_overlay_background_color"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tv_lbl_emp_abm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:text="ABM:"
+            android:textColor="@color/cast_intro_overlay_background_color"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_txt_emp_abm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="-3dp"
+            android:text="Pramod Ambi"
+            android:textColor="@color/cast_intro_overlay_background_color"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-7dp"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tv_lbl_emp_rbm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:text="RBM:"
+            android:textColor="@color/cast_intro_overlay_background_color"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_txt_emp_rbm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="-3dp"
+            android:text="Amol Mohite"
+            android:textColor="@color/cast_intro_overlay_background_color"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-7dp"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tv_lbl_emp_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:text="SM:"
+            android:textColor="@color/cast_intro_overlay_background_color"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_txt_emp_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="-3dp"
+            android:text="AAAAAAAAA AAAAAAAAAA"
+            android:textColor="@color/cast_intro_overlay_background_color"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-7dp"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tv_lbl_emp_nbm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:text="NBM:"
+            android:textColor="@color/cast_intro_overlay_background_color"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_txt_emp_nbm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-3dp"
+            android:text="AAAAAAAAA AAAAAAAAAA"
+            android:textColor="@color/cast_intro_overlay_background_color"
+            android:textSize="15sp" />
+
+    </LinearLayout>-->
+            </ScrollView>
+
+        </LinearLayout>
+
+        <!--Primary Sale Total Amount-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/mycustom_border_background_for_prim_seco_app_0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tv_lbl_pri_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:text="PRIMARY SALES(Remove Return):"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="#7E55F3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tv_lbl_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:text="Total:"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_txt_target_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="-3dp"
+                    android:text="1000"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!--</RelativeLayout>
+</android.support.v7.widget.CardView>-->

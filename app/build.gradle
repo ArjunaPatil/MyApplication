@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+android {
+    signingConfigs {
+        config {
+            keyAlias 'lystenkey'
+            keyPassword 'vgvg@2020'
+            storeFile file('D:/lysten.jks')
+            storePassword 'vgvg@2020'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.lysten.global.myapplication"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 24
+        versionName "7.80"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            signingConfig signingConfigs.config
+            multiDexEnabled true
+        }
+        debug {
+            debuggable true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //compile files('libs/retrofit-1.9.0.jar')
+    //compile files('libs/gson-2.2.4-sources.jar')
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    //compile 'io.realm:realm-android:0.87.4'
+    compile 'com.android.volley:volley:1.0.0'
+
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.google.android.gms:play-services:10.2.0'
+
+    compile 'com.google.android.gms:play-services-maps:10.2.0'
+    compile 'com.google.firebase:firebase-core:10.2.0'
+    compile 'com.google.firebase:firebase-messaging:10.2.0'
+    compile 'junit:junit:4.12'
+    /* compile 'com.android.support:appcompat-v7:23.4.0'
+     compile 'com.android.support:recyclerview-v7:25.1.0'
+     compile 'com.android.support:cardview-v7:25.1.0'*/
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'org.apache.directory.studio:org.apache.commons.io:2.4'
+
+    /*------------------------------------------*/
+    /*compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })*/
+    /*compile 'com.android.support:appcompat-v7:23.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'*/
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC1'
+    /*compile 'com.android.support:cardview-v7:23.+'*/
+    /*compile 'com.jsibbold:zoomage:1.1.0'*/
+    /*------------------------------------------*/
+
+}
+apply plugin: 'com.google.gms.google-services'
+
+

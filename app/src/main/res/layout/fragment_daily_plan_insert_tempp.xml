@@ -1,0 +1,1335 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vin.myapplication.fragment_daily_plan_insert_temp2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efebe9"
+        android:orientation="vertical">
+        <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#efebe9"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="PLAN DATE:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txt_plan_of_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--DCR Detail Section-->
+                <LinearLayout
+                    android:id="@+id/ll_dcr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/daily_plan_border"
+                    android:orientation="vertical"
+                    android:paddingBottom="0dp">
+                    <!--mycustom_border_background_shade400-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="center"
+                        android:text=" DCR DETAILS "
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_doc_call"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_tbm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_doctor_of_TBM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="PATCH OF TBM" />
+
+                            <LinearLayout
+                                android:id="@+id/doctor_of_TBM"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:id="@+id/doctor_of_TBM_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/doctor_of_TBM_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="8dp"
+                                        android:fontFamily="@string/fontFamily__roboto_regular"
+                                        android:gravity="left"
+                                        android:text=" Select"
+                                        android:textColor="#000000"
+                                        android:textSize="18dp" />
+                                    <!--android:text=" Select PATCH of TBM"-->
+
+                                    <ImageButton
+                                        android:id="@+id/doctor_of_TBM_3"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="left"
+                                        android:layout_marginLeft="8dp"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_expand_more_black_48dp"
+                                        android:tint="#000000" />
+
+                                    <TextView
+                                        android:id="@+id/name_doctor_of_TBM"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:paddingLeft="6dip"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vw_doc_call"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_patch_of_tbm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="PATCH" />
+                            <!--android:text="SELECT PATCH"-->
+                            <LinearLayout
+                                android:id="@+id/select_patch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:id="@+id/select_patch_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/select_patch_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="8dp"
+                                        android:fontFamily="@string/fontFamily__roboto_regular"
+                                        android:gravity="left"
+                                        android:text=" Select"
+                                        android:textColor="#000000"
+                                        android:textSize="18dp" />
+                                    <!--android:text=" Select Patch"-->
+
+                                    <ImageButton
+                                        android:id="@+id/select_patch_3"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="left"
+                                        android:layout_marginLeft="8dp"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_expand_more_black_48dp"
+                                        android:tint="#000000" />
+
+                                    <TextView
+                                        android:id="@+id/name_select_patch"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:paddingLeft="6dip"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <!-- <ImageButton
+                                     android:id="@+id/btn_add_patch"
+                                     android:layout_width="30dp"
+                                     android:layout_height="30dp"
+                                     android:layout_gravity="right"
+                                     android:layout_marginRight="10dp"
+                                     android:background="@android:color/transparent"
+                                     android:scaleType="fitCenter"
+                                     android:src="@drawable/ic_add_circle_black_48dp"
+                                     android:tint="#000000" />-->
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <!---->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_jfw_with1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/select_jfw_with_41"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="2"
+                                android:fontFamily="@string/fontFamily__roboto_regular"
+                                android:gravity="left"
+                                android:text=" JFW WITH1"
+                                android:textColor="#757575"
+                                android:textSize="14dp" />
+                            <!--android:text=" SELECT JFW WITH1"-->
+
+                            <LinearLayout
+                                android:id="@+id/jfw_of_all1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:id="@+id/jfw_of_all_11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/jfw_of_all_21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="8dp"
+                                        android:fontFamily="@string/fontFamily__roboto_regular"
+                                        android:gravity="left"
+                                        android:text=" Select"
+                                        android:textColor="#000000"
+                                        android:textSize="18dp" />
+
+                                    <!--android:text=" Select JFW with"-->
+
+                                    <ImageButton
+                                        android:id="@+id/jfw_of_all_31"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="left"
+                                        android:layout_marginLeft="8dp"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_expand_more_black_48dp"
+                                        android:tint="#000000" />
+
+                                    <!--<TextView
+                                        android:id="@+id/name_jfw_of_all"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:paddingLeft="6dip"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />-->
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!---->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <!---->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_jfw_with2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/select_jfw_with_42"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="2"
+                                android:fontFamily="@string/fontFamily__roboto_regular"
+                                android:gravity="left"
+                                android:text=" JFW WITH2"
+                                android:textColor="#757575"
+                                android:textSize="14dp" />
+
+                            <LinearLayout
+                                android:id="@+id/jfw_of_all2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:id="@+id/jfw_of_all_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/jfw_of_all_22"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="8dp"
+                                        android:fontFamily="@string/fontFamily__roboto_regular"
+                                        android:gravity="left"
+                                        android:text=" Select"
+                                        android:textColor="#000000"
+                                        android:textSize="18dp" />
+                                    <!--android:text=" Select JFW with"-->
+
+                                    <ImageButton
+                                        android:id="@+id/jfw_of_all_32"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="left"
+                                        android:layout_marginLeft="8dp"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_expand_more_black_48dp"
+                                        android:tint="#000000" />
+
+                                    <!--<TextView
+                                        android:id="@+id/name_jfw_of_all"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:paddingLeft="6dip"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />-->
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!--<LinearLayout
+                            android:id="@+id/ll_JFW_with"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/select_patch_4s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="2"
+                                android:fontFamily="@string/fontFamily__roboto_regular"
+                                android:gravity="left"
+                                android:text=" JFW With "
+                                android:textColor="#757575"
+                                android:textSize="14dp" />
+
+                            <LinearLayout
+                                android:id="@+id/select_patch_1s"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/select_patch_2s"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:fontFamily="@string/fontFamily__roboto_regular"
+                                    android:gravity="left"
+                                    android:text=" Select Employee"
+                                    android:textColor="#000000"
+                                    android:textSize="18dp" />
+
+
+                                <ImageButton
+                                    android:id="@+id/select_patch_3s"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="left"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_expand_more_black_48dp"
+                                    android:tint="#000000" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>-->
+
+                    </LinearLayout>
+                    <!---->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="left"
+                        android:text="DCR AGENDA"
+                        android:textColor="#757575"
+                        android:textSize="14dp" />
+
+                    <!--android:layout_marginBottom="-8.7dp"-->
+                    <EditText
+                        android:id="@+id/edit_dcr_agenda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="8.7dp"
+                        android:layout_marginTop="0dp"
+                        android:height="50dp"
+                        android:background="@drawable/border"
+                        android:gravity="top"
+                        android:hint="ENTER DCR AGENDA"
+                        android:lines="2"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+                <!--OBJECTIVE Detail Section-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/daily_plan_border"
+                    android:orientation="vertical"
+                    android:paddingBottom="0dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="center"
+                        android:text=" OBJECTIVE OF THE DAY "
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/txt_objective"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="-8.7dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="top"
+                        android:hint="ENTER OBJECTIVE HERE.."
+                        android:lines="3"
+                        android:shadowColor="#000000"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+                <!--CME Detail Section-->
+                <LinearLayout
+                    android:id="@+id/ll_cme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/daily_plan_border"
+                    android:orientation="vertical"
+                    android:paddingBottom="0dp"
+                    android:visibility="gone"
+                    android:weightSum="1">
+                    <!--mycustom_border_background_shade300-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="center"
+                        android:text="  CME NOTE"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/edit_cme_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="-8.7dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="top"
+                        android:hint="ENTER CME NOTE"
+                        android:lines="2"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+
+                    <!-- </LinearLayout>-->
+                </LinearLayout>
+
+                <!--CAMP Detail Section-->
+                <LinearLayout
+                    android:id="@+id/ll_camp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/daily_plan_border"
+                    android:orientation="vertical"
+                    android:paddingBottom="0dp">
+                    <!--mycustom_border_background_shade200-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="center"
+                        android:text=" CAMP DETAILS"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_camp_call"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_tbm2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_doctor_of_TBM2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="DOCTOR OF TBM" />
+
+                            <LinearLayout
+                                android:id="@+id/doctor_of_TBM2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:id="@+id/doctor_of_TBM_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/doctor_of_TBM_22"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="8dp"
+                                        android:fontFamily="@string/fontFamily__roboto_regular"
+                                        android:gravity="left"
+                                        android:text=" Select"
+                                        android:textColor="#000000"
+                                        android:textSize="18dp" />
+                                    <!--android:text=" Select Doctor of TBM"-->
+
+                                    <ImageButton
+                                        android:id="@+id/doctor_of_TBM_32"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="left"
+                                        android:layout_marginLeft="8dp"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_expand_more_black_48dp"
+                                        android:tint="#000000" />
+
+                                    <TextView
+                                        android:id="@+id/name_doctor_of_TBM2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:paddingLeft="6dip"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vw_camp_call"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_patch_of_tbm2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="PATCH" />
+
+                            <LinearLayout
+                                android:id="@+id/select_patch2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:id="@+id/select_patch_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/select_patch_22"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="8dp"
+                                        android:fontFamily="@string/fontFamily__roboto_regular"
+                                        android:gravity="left"
+                                        android:text=" Select"
+                                        android:textColor="#000000"
+                                        android:textSize="18dp" />
+                                    <!--android:text=" Select Patch"-->
+
+                                    <ImageButton
+                                        android:id="@+id/select_patch_32"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="left"
+                                        android:layout_marginLeft="8dp"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_expand_more_black_48dp"
+                                        android:tint="#000000" />
+
+                                    <TextView
+                                        android:id="@+id/name_select_patch2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:paddingLeft="6dip"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_doctor_of_tbm2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="DOCTOR" />
+
+                            <LinearLayout
+                                android:id="@+id/select_doctor2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:id="@+id/select_doctor12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/select_doctor22"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="8dp"
+                                        android:fontFamily="@string/fontFamily__roboto_regular"
+                                        android:gravity="left"
+                                        android:text=" Select"
+                                        android:textColor="#000000"
+                                        android:textSize="18dp" />
+                                    <!--android:text=" Select Doctor"-->
+
+                                    <ImageButton
+                                        android:id="@+id/select_doctor32"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="left"
+                                        android:layout_marginLeft="8dp"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_expand_more_black_48dp"
+                                        android:tint="#000000" />
+
+                                    <TextView
+                                        android:id="@+id/name_select_doctor2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:paddingLeft="6dip"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <!---->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_jfw_with3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/select_jfw_with_43"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="2"
+                                android:fontFamily="@string/fontFamily__roboto_regular"
+                                android:gravity="left"
+                                android:text=" JFW WITH1"
+                                android:textColor="#757575"
+                                android:textSize="14dp" />
+
+                            <LinearLayout
+                                android:id="@+id/jfw_of_all3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:id="@+id/jfw_of_all_13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/jfw_of_all_23"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="8dp"
+                                        android:fontFamily="@string/fontFamily__roboto_regular"
+                                        android:gravity="left"
+                                        android:text=" Select"
+                                        android:textColor="#000000"
+                                        android:textSize="18dp" />
+
+                                    <!--android:text=" Select JFW with"-->
+
+                                    <ImageButton
+                                        android:id="@+id/jfw_of_all_33"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="left"
+                                        android:layout_marginLeft="8dp"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_expand_more_black_48dp"
+                                        android:tint="#000000" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!---->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <!---->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_jfw_with4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/select_jfw_with_44"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="2"
+                                android:fontFamily="@string/fontFamily__roboto_regular"
+                                android:gravity="left"
+                                android:text=" JFW WITH2"
+                                android:textColor="#757575"
+                                android:textSize="14dp" />
+
+                            <LinearLayout
+                                android:id="@+id/jfw_of_all4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:id="@+id/jfw_of_all_14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/jfw_of_all_24"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="8dp"
+                                        android:fontFamily="@string/fontFamily__roboto_regular"
+                                        android:gravity="left"
+                                        android:text=" Select"
+                                        android:textColor="#000000"
+                                        android:textSize="18dp" />
+                                    <!--android:text=" Select JFW with"-->
+
+                                    <ImageButton
+                                        android:id="@+id/jfw_of_all_34"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_gravity="left"
+                                        android:layout_marginLeft="8dp"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_expand_more_black_48dp"
+                                        android:tint="#000000" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!---->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="left"
+                        android:text="CAMP AGENDA"
+                        android:textColor="#757575"
+                        android:textSize="14dp" />
+
+                    <!--android:layout_marginBottom="-8.7dp"-->
+                    <EditText
+                        android:id="@+id/edit_camp_agenda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="8.7dp"
+                        android:layout_marginTop="0dp"
+                        android:height="50dp"
+                        android:background="@drawable/border"
+                        android:gravity="top"
+                        android:hint="ENTER CAMP AGENDA"
+                        android:lines="2"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+
+                    <!--</LinearLayout>-->
+                </LinearLayout>
+
+                <!--Meeting Detail Section-->
+                <LinearLayout
+                    android:id="@+id/ll_meeting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/daily_plan_border"
+                    android:orientation="vertical"
+                    android:paddingBottom="0dp">
+                    <!--mycustom_border_background_shade100-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="center"
+                        android:text=" MEETING DETAILS"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="left"
+                        android:text="MEETING WITH"
+                        android:textColor="#757575"
+                        android:textSize="14dp" />
+
+                    <!--android:layout_marginBottom="-8.7dp"-->
+                    <EditText
+                        android:id="@+id/edit_meeting_with"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="8.7dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/border"
+                        android:gravity="top"
+                        android:hint="ENTER MEETING WITH"
+                        android:lines="2"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="left"
+                        android:text="MEETING PLACE"
+                        android:textColor="#757575"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/edit_meeting_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="8.7dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/border"
+                        android:gravity="top"
+                        android:hint="ENTER MEETING PLACE"
+                        android:lines="2"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="left"
+                        android:text="MEETING AGENDA"
+                        android:textColor="#757575"
+                        android:textSize="14dp" />
+
+                    <!--EditText android:layout_marginBottom="-8.7dp"-->
+                    <EditText
+                        android:id="@+id/edit_meeting_memo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="8.7dp"
+                        android:layout_marginTop="0dp"
+                        android:height="50dp"
+                        android:background="@drawable/border"
+                        android:gravity="top"
+                        android:hint="ENTER MEETING AGENDA"
+                        android:lines="2"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <!--Leave Detail Section-->
+                <LinearLayout
+                    android:id="@+id/ll_leave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/daily_plan_border"
+                    android:orientation="vertical"
+                    android:paddingBottom="0dp">
+                    <!--mycustom_border_background_shade50-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="center"
+                        android:text=" LEAVE DETAILS"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk_causual_leave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="CAUSUAL LEAVE"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <CheckBox
+                        android:id="@+id/chk_privilege_leave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="PRIVILEGE LEAVE"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sick_leave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="SICK LEAVE"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LEAVE REASON" />
+                    <!--EditText android:layout_marginBottom="-8.7dp"-->
+                    <EditText
+                        android:id="@+id/edit_leave_reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="8.7dp"
+                        android:layout_marginTop="0dp"
+                        android:height="50dp"
+                        android:background="@drawable/border"
+                        android:gravity="top"
+                        android:hint="ENTER LEAVE REASON"
+                        android:lines="2"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                    <!-- </LinearLayout>-->
+                </LinearLayout>
+
+                <!--Create Button Section-->
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_rounded_blue"
+                    android:gravity="center"
+                    android:text="CREATE PLAN"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!--<TextView
+           android:id="@+id/txt_daily_plan_id"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingLeft="6dip"
+           android:textSize="10sp"
+           android:textStyle="bold"
+           android:visibility="gone" />
+       <TextView
+           android:id="@+id/txt_patch_id"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingLeft="6dip"
+           android:textSize="10sp"
+           android:textStyle="bold"
+           android:visibility="gone" />-->
+</FrameLayout>

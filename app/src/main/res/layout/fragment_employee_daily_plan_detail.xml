@@ -1,0 +1,252 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c5cae9"
+    tools:context="com.example.vin.myapplication.fragment_employee_daily_plan_detail">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Employee Name [Designation] :"
+                android:textColor="#ff5722"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/txt_emp_name_deisgnation"
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Objective :"
+                android:textColor="#ff5722"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_objective"
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Patch :"
+                android:textColor="#ff5722"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_patch_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_marginLeft="30dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Plan :"
+                android:textColor="#ff5722"
+                android:textStyle="bold"/>
+            <!-- for below for 4 textview android:layout_marginLeft="30dp"-->
+            <TextView
+                android:id="@+id/txt_plan_dcr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" * DCR"
+                android:visibility="gone"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/txt_plan_meeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" * MEETING"
+                android:visibility="gone"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/txt_plan_camp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" * CAMP"
+                android:visibility="gone"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/txt_plan_cme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" * CME"
+                android:visibility="gone"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/txt_plan_leave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" * LEAVE"
+                android:textColor="#f44336"
+                android:visibility="gone"
+                android:layout_marginLeft="30dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Note :"
+                android:textColor="#ff5722"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_note_dcr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/txt_note_meeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/txt_note_camp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/txt_note_cme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:id="@+id/txt_note_leave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="30dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Meeting With :"
+                android:textColor="#ff5722"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_meeting_with"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_marginLeft="30dp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Approve :"
+                android:textColor="#ff5722"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/img_check_is_approved"
+                android:layout_width="30dp"
+                android:layout_height="16dp"
+                android:layout_gravity="right"
+                android:layout_weight="0.8"
+                android:src="@drawable/ic_done_all_black_48dp"
+                android:tint="#4caf50"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/img_check_no_approved"
+                android:layout_width="30dp"
+                android:layout_height="16dp"
+                android:layout_gravity="right"
+                android:layout_weight="0.8"
+                android:src="@drawable/ic_clear_black_48dp"
+                android:tint="#f44336"
+                android:visibility="gone"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Approved By :"
+                android:textColor="#ff5722"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_approved_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

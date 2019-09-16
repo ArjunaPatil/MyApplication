@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="5dp" />
+    <!--Arjun comment 29-09-2017<padding android:left="0dp" android:right="0dp" android:top="0dp" android:bottom="0dp"/>-->
+    <padding
+        android:bottom="10dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="10dp" />
+    <stroke
+        android:width="2dp"
+        android:color="#9BB9DE" />
+    <solid android:color="#eeeeee" />
+
+    <!--#e0e0e0<gradient android:startColor="#80deea" android:endColor="#80deea" android:centerColor="#b2ebf2" android:angle="90" />-->
+</shape>

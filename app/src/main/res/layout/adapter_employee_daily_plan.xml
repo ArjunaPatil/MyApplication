@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:background="@drawable/mycustom_toast_border_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- <TextView
+             android:id="@+id/work_type"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:visibility="visible" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:text=" Employee Name:"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/employee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/employee_designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- <TextView
+             android:id="@+id/work_type"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:visibility="visible" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:text=" OBJECTIVE:"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/objective"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--   <ImageView
+               android:layout_width="25dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+               android:scaleType="fitCenter"
+               android:src="@drawable/ic_done_all_black_48dp"
+               android:tint="#FFFFFF" />-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:text=" Patch:"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/patch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:text=" Plan:"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/dcr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:text=" DCR"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:text=" Meeting"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/camp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:text=" Camp"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/cme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:text=" CME"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/leave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:text=" Leave"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- <TextView
+             android:id="@+id/work_type"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:visibility="visible" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:text=" Approved:"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <!--<TextView
+            android:id="@+id/approved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            android:textStyle="normal" />center_vertical-->
+
+        <ImageView
+            android:id="@+id/img_check_is_approve"
+            android:layout_marginLeft="-230dp"
+            android:layout_width="10dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_done_all_black_48dp"
+            android:tint="#4caf50"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_check_no_approve"
+            android:layout_marginLeft="-230dp"
+            android:layout_width="10dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_clear_black_48dp"
+            android:tint="#f44336"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+    <!---->
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dip"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</LinearLayout>
+
+
+    <!-- <View
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@android:color/darker_gray" />-->

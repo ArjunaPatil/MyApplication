@@ -1,0 +1,116 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vin.myapplication.fragment_HeadquarterWise_Stockiest_List">
+
+    <LinearLayout
+
+        android:id="@+id/activity_live__work"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.vin.myapplication.LIVE_WORK">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#3F51B5"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_search"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".5"
+                android:hint="search"
+                android:text=""
+                android:textColor="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/btn_refresh_data"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_cached_black_48dp"
+                android:tint="#FFFFFF" />
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/btn_add_data"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:src="@drawable/ic_add_black_48dp"-->
+                <!--android:tint="#FFFFFF" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:id="@+id/select_headquarter"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/select_headquarter1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight=".9">
+
+                <TextView
+                    android:id="@+id/select_headquarter2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@string/fontFamily__roboto_regular"
+                    android:gravity="left"
+                    android:text="Select HeadQuarter"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/name_user_of_headquarter"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:paddingLeft="6dip"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+                <ImageButton
+                    android:id="@+id/select_headquarter3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_expand_more_black_48dp"
+                    android:tint="#000000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/vw_headquarter"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="@android:color/darker_gray" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+
+</FrameLayout>

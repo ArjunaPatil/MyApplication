@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/select_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/select_date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="DATE: "
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/select_date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01/01/2015"
+                    android:textSize="16dp" />
+
+                <ImageButton
+                    android:id="@+id/select_date3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="8dp"
+
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_expand_more_black_48dp"
+                    android:tint="#000000" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:layout_weight="5"
+                android:foreground="#000000" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:text="BOOKING BY TBM (Name)" />
+
+
+            <LinearLayout
+                android:id="@+id/chemist_of_TBM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/chemist_of_TBM_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/chemist_of_TBM_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="left"
+                        android:text=" My Name"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+
+                    <ImageButton
+                        android:id="@+id/chemist_of_TBM_3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="8dp"
+
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_expand_more_black_48dp"
+                        android:tint="#000000" />
+
+                    <TextView
+                        android:id="@+id/name_chemist_of_TBM"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:paddingLeft="6dip"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_select_tbm_of_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:foreground="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HQ: "
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/txt_hq_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HQ NAME"
+                    android:textColor="@color/cast_intro_overlay_background_color" />
+
+            </LinearLayout>
+
+
+            <!-- <View
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginRight="5dp"
+
+                 android:layout_marginTop="10dp"
+                 android:layout_weight="5"
+                 android:foreground="#000000" />-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:text="CAMPAIGN" />
+            <!--android:text="SELECT CAMPAIGN"-->
+            <LinearLayout
+                android:id="@+id/select_camp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/select_camp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:fontFamily="@string/fontFamily__roboto_regular"
+                    android:gravity="left"
+                    android:text=" SELECT"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+
+                <ImageButton
+                    android:id="@+id/select_camp3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_expand_more_black_48dp"
+                    android:tint="#000000" />
+
+                <!--<TextView
+                    android:id="@+id/name_select_camp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:paddingLeft="6dip"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />-->
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:text="Campaign Details"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/txt_camp_det"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textSize="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:layout_weight="5"
+                android:foreground="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/mycustom_border_background_shade300_no_round"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/cast_expanded_controller_ad_label_background_color"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/camp_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="CAMPAIGN DATA"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/edit_qty_lbl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center"
+                            android:text="QTY "
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edit_qty"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/mycustom_border_background_shade300_no_round"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/edit_f_qty_lbl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center"
+                            android:text="FREE QTY "
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edit_f_qty"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/mycustom_border_background_shade300_no_round"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/edit_t_qty_lbl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center"
+                            android:text="TOTAL QTY "
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edit_t_qty"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/mycustom_border_background_shade300_no_round"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/edit_t_amt_lbl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center"
+                            android:text="TOTAL AMOUNT"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edit_t_amt"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/mycustom_border_background_shade300_no_round"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:foreground="#000000" />
+
+                <LinearLayout
+                    android:id="@+id/ll_doctor_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="5"
+                        android:foreground="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="DOCTOR" />
+                    <!--android:text="SELECT DOCTOR"-->
+
+                    <LinearLayout
+                        android:id="@+id/select_doctor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:id="@+id/select_doctor1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/select_doctor2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:fontFamily="@string/fontFamily__roboto_regular"
+                                android:gravity="left"
+                                android:text=" Select"
+                                android:textColor="#000000"
+                                android:textSize="18dp" />
+                            <!--android:text=" Select Doctor"-->
+
+                            <ImageButton
+                                android:id="@+id/select_doctor3"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="8dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_expand_more_black_48dp"
+                                android:tint="#000000" />
+
+                            <TextView
+                                android:id="@+id/name_select_doctor"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:paddingLeft="6dip"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <!-- <ImageButton
+                             android:id="@+id/btn_add_doctor"
+                             android:layout_width="30dp"
+                             android:layout_height="30dp"
+                             android:layout_gravity="center_vertical"
+                             android:layout_marginRight="10dp"
+                             android:background="@android:color/transparent"
+                             android:scaleType="fitCenter"
+                             android:src="@drawable/ic_add_circle_black_48dp"
+                             android:tint="#000000" />-->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_chemist_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="5"
+                        android:foreground="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="CHEMIST" />
+                    <!--android:text="SELECT CHEMIST"-->
+
+                    <LinearLayout
+                        android:id="@+id/select_chemist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:id="@+id/select_chemist1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/select_chemist2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:fontFamily="@string/fontFamily__roboto_regular"
+                                android:gravity="left"
+                                android:text=" Select"
+                                android:textColor="#000000"
+                                android:textSize="18dp" />
+                            <!--android:text=" Select Chemist"-->
+
+                            <ImageButton
+                                android:id="@+id/select_chemist3"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="8dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_expand_more_black_48dp"
+                                android:tint="#000000" />
+
+                            <TextView
+                                android:id="@+id/name_select_chemist"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:paddingLeft="6dip"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/btn_add_chemist"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_add_circle_black_48dp"
+                            android:tint="#000000"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="5"
+                        android:foreground="#000000" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Stockist" />
+                <!--android:text="Select Stockist"-->
+
+                <LinearLayout
+                    android:id="@+id/select_stockist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/select_stockist1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/select_stockist2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@string/fontFamily__roboto_regular"
+                            android:gravity="left"
+                            android:text=" Select"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+                        <!--android:text=" Select Stockist"-->
+
+                        <ImageButton
+                            android:id="@+id/select_stockist3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="8dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_expand_more_black_48dp"
+                            android:tint="#000000" />
+
+                        <TextView
+                            android:id="@+id/name_select_stockist"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:paddingLeft="6dip"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:foreground="#000000" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:text="Enter Invoice Number  "
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edit_inv_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/mycustom_border_background_shade300_no_round"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Any Comment:" />
+
+            <EditText
+                android:id="@+id/edit_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:height="90dp"
+                android:background="@drawable/mycustom_border_background_shade300"
+                android:gravity="top"
+                android:textAlignment="gravity" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="SUBMIT BOOKING" />
+
+            <TextView
+                android:id="@+id/txt_id"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:paddingLeft="6dip"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_dr_call_by_user_id"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:paddingLeft="6dip"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

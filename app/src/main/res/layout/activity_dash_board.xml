@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/reporting1"
+            android:scaleType="fitCenter"
+            android:text="My calender"
+            android:id="@+id/btn_calender" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/reporting1"
+            android:scaleType="fitCenter"
+            android:text="My CALL"
+            android:id="@+id/btn_work" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/reporting1"
+            android:scaleType="fitCenter"
+            android:text="My DCR" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/reporting1"
+            android:scaleType="fitCenter"
+            android:text="My Masters" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/reporting1"
+            android:scaleType="fitCenter"
+            android:text="My Contrubution" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/reporting1"
+            android:scaleType="fitCenter"
+            android:text="My Reports" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/btn_7"
+            android:src="@drawable/reporting1"
+            android:scaleType="fitCenter"
+            android:text="My Profile" />
+
+        <Button
+            android:id="@+id/btn_forms"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/reporting1"
+            android:scaleType="fitCenter"
+            android:text="Forms" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/btn_9"
+            android:layout_weight="1"
+            android:src="@drawable/reporting1"
+            android:scaleType="fitCenter"
+            android:text="Settings" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

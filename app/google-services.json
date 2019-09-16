@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "454858299336",
+    "firebase_url": "https://lystendb.firebaseio.com",
+    "project_id": "lystendb",
+    "storage_bucket": "lystendb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454858299336:android:bbc10d2de87e72a3",
+        "android_client_info": {
+          "package_name": "com.lysten.global.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454858299336-o0av6c1rhai3b6rqtpnm8nig9rs0a0v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjF0HNWtyPrIuOOENG-T2P0uLbReAYBuY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

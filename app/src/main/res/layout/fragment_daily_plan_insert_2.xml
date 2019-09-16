@@ -1,0 +1,609 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vin.myapplication.fragment_daily_plan_insert_2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#efebe9"
+       >
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#efebe9"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:gravity="center"
+
+                android:text="PLAN FOR DATE:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                android:textStyle="normal" />
+
+            <TextView
+
+                android:id="@+id/txt_plan_of_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_dcr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/mycustom_border_background_shade400"
+                    android:orientation="vertical"
+                    android:paddingBottom="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/ll_all_patches"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1.6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/select_patch_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="2"
+                                android:fontFamily="@string/fontFamily__roboto_regular"
+                                android:gravity="left"
+                                android:text=" ALL PATCHES "
+                                android:textColor="#757575"
+                                android:textSize="14dp" />
+
+                            <LinearLayout
+                                android:id="@+id/select_patch_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/select_patch_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+
+                                    android:fontFamily="@string/fontFamily__roboto_regular"
+                                    android:gravity="left"
+                                    android:text=" Select Patch"
+                                    android:textColor="#000000"
+                                    android:textSize="18dp" />
+
+
+                                <ImageButton
+                                    android:id="@+id/select_patch_3"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="left"
+
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_expand_more_black_48dp"
+                                    android:tint="#000000" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+
+                            android:id="@+id/view_show_dr_in_patch2"
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.014"
+                            android:background="#FFFFFF" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:orientation="vertical">
+
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@string/fontFamily__roboto_regular"
+                                android:gravity="center"
+                                android:text="DR Count"
+                                android:textColor="#000000"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/total_dr_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1.5"
+                                android:fontFamily="@string/fontFamily__roboto_regular"
+                                android:gravity="right"
+                                android:text=" 0"
+                                android:textColor="#757575"
+                                android:textSize="18dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:background="@drawable/mycustom_border_background_shade400"
+                    android:orientation="vertical"
+                    android:paddingBottom="0dp">
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="center"
+
+                        android:text=" OBJECTIVE OF THE DAY "
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/txt_objective"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+
+                        android:layout_marginBottom="-8.7dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="top"
+                        android:hint="ENTER OBJECTIVE HERE.."
+                        android:lines="3"
+                        android:shadowColor="#000000"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+                <!--  <LinearLayout
+                          android:id="@+id/ll_dcr_seocond_patch"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+
+                          android:orientation="vertical">
+
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:fontFamily="@string/fontFamily__roboto_medium"
+                              android:gravity="center"
+                              android:text="2nd PATCH FOR WORKING"
+                              android:textColor="#283593"
+                              android:textSize="18dp" />
+
+                          <Spinner
+                              android:id="@+id/spinner_patch2"
+                              style="@style/spinner_style"
+                              android:layout_width="fill_parent"
+
+                              android:layout_height="30dp"
+                              android:layout_marginBottom="0dp" />
+
+                          <LinearLayout
+                              android:id="@+id/transitions_container1"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+
+                              android:layout_marginTop="-4dp"
+                              android:orientation="vertical">
+
+                              <LinearLayout
+
+                                  android:id="@+id/ll_patch2_dr_count"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="40dp"
+                                  android:layout_marginLeft="5dp"
+                                  android:layout_marginRight="5dp"
+                                  android:layout_marginTop="0dp"
+                                  android:background="#ffb74d"
+                                  android:orientation="horizontal"
+                                  android:weightSum="2">
+
+                                  <TextView
+
+                                      android:id="@+id/txt_dr_count_patch2"
+                                      android:layout_width="0dp"
+                                      android:layout_height="wrap_content"
+                                      android:layout_gravity="left|center_vertical"
+                                      android:layout_marginLeft="5dp"
+                                      android:layout_weight="1.8"
+                                      android:fontFamily="sans-serif-condensed"
+                                      android:text="Total Dr In Patch:"
+                                      android:textColor="#000000"
+
+                                      android:textSize="18dp" />
+
+                                  <View
+                                      android:id="@+id/view_show_dr_in_patch2"
+                                      android:layout_width="0.8dp"
+                                      android:layout_height="25dp"
+                                      android:layout_gravity="center_vertical"
+
+                                      android:background="#FFFFFF" />
+
+                                  <ImageButton
+                                      android:id="@+id/btn_show_dr_in_patch2"
+                                      android:layout_width="0dp"
+                                      android:layout_height="35dp"
+                                      android:layout_gravity="center_vertical"
+                                      android:layout_weight="0.2"
+                                      android:background="@android:color/transparent"
+                                      android:scaleType="fitCenter"
+                                      android:src="@drawable/ic_expand_more_black_48dp"
+                                      android:tint="#FFFFFF" />
+
+                              </LinearLayout>
+
+                              <ListView
+                                  android:id="@+id/listView_patch_2_doc"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+
+
+                                  android:layout_marginLeft="5dp"
+                                  android:layout_marginRight="5dp"
+
+
+                                  android:dividerHeight="0sp" />
+                          </LinearLayout>
+
+
+                          <View
+                              android:layout_width="match_parent"
+                              android:layout_height="1dp"
+                              android:background="@android:color/darker_gray" />
+
+                      </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/ll_cme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/mycustom_border_background_shade300"
+                    android:orientation="vertical"
+                    android:paddingBottom="0dp"
+                    android:weightSum="1">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="center"
+
+                        android:text="  CME NOTE"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/edit_cme_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+
+                        android:layout_marginBottom="-8.7dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="top"
+                        android:hint="ENTER CME NOTE"
+                        android:lines="2"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+
+                    <!-- </LinearLayout>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_camp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/mycustom_border_background_shade200"
+                    android:orientation="vertical"
+                    android:paddingBottom="0dp">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="center"
+
+                        android:text="  CAMP NOTE"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                    <!-- <LinearLayout
+
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginBottom="5dp"
+                             android:layout_marginLeft="5dp"
+                             android:layout_marginRight="5dp"
+                             android:layout_marginTop="5dp"
+                             android:background="#3949ab"
+                             android:orientation="vertical">-->
+
+                    <EditText
+                        android:id="@+id/edit_camp_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="-8.7dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="top"
+                        android:hint="ENTER CAMP NOTE"
+                        android:lines="2"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+
+                    <!--</LinearLayout>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_meeting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/mycustom_border_background_shade100"
+                    android:orientation="vertical"
+                    android:paddingBottom="0dp">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="center"
+
+                        android:text=" MEETING DETAILS"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                    <!--     <LinearLayout
+
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginLeft="5dp"
+                                 android:layout_marginRight="5dp"
+                                 android:background="#3949ab"
+                                 android:orientation="vertical">-->
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="left"
+
+                        android:text="MEETING WITH"
+                        android:textColor="#757575"
+                        android:textSize="14dp" />
+                    <EditText
+                        android:id="@+id/edit_meeting_with"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="-8.7dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="top"
+                        android:hint="ENTER MEETING WITH"
+                        android:lines="2"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@string/fontFamily__roboto_regular"
+                        android:gravity="left"
+
+                        android:text="MEETING NOTE"
+                        android:textColor="#757575"
+                        android:textSize="14dp" />
+                    <EditText
+                        android:id="@+id/edit_meeting_memo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+
+                        android:layout_marginBottom="-8.7dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="top"
+                        android:hint="ENTER MEETING NOTE"
+                        android:lines="2"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                    <!--     <View
+                                 android:layout_width="match_parent"
+                                 android:layout_height="2dp"
+                                 android:layout_marginBottom="5dp"
+                                 android:layout_marginTop="5dp"
+                                 android:background="#283593" />
+                         </LinearLayout>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_leave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/mycustom_border_background_shade50"
+                    android:orientation="vertical"
+                    android:paddingBottom="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LEAVE REASON" />
+
+                    <!-- <LinearLayout
+
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginBottom="5dp"
+                             android:layout_marginLeft="5dp"
+                             android:layout_marginRight="5dp"
+                             android:layout_marginTop="5dp"
+                             android:background="#3949ab"
+                             android:orientation="vertical">-->
+
+                    <EditText
+                        android:id="@+id/edit_leave_reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="-8.7dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="top"
+                        android:hint="ENTER LEAVE REASON"
+                        android:lines="2"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+
+                    <!-- </LinearLayout>-->
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_rounded_blue"
+                    android:gravity="center"
+                    android:text="CREATE PLAN"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22dp" />
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+ <!--   <TextView
+        android:id="@+id/txt_daily_plan_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dip"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/txt_patch_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dip"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="gone" />-->
+</FrameLayout>

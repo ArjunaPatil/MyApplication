@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/activity_live__work"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/select_user"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#d7ccc8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/select_user1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/select_user2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@string/fontFamily__roboto_regular"
+                    android:gravity="left"
+                    android:text="USER NAME :"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/name_flag_of_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6dip"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_margin="1dp"
+            android:foreground="#000000" />-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="@android:color/darker_gray" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/activity_live__work1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Master Form Section-->
+                <LinearLayout
+                    android:id="@+id/ll_master_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="05dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_master_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/daily_plan_border"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@string/fontFamily__roboto_regular"
+                            android:gravity="center"
+                            android:text="MASTER FORM's"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.014"
+                            android:background="#FFFFFF" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.014"
+                            android:background="#FFFFFF" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_mast_activity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="05dp"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:id="@+id/img_lock_mast_prof"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="18dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_lock_black_24dp"
+                                    android:tint="#f44336"
+                                    android:visibility="gone" />
+
+                                <ImageButton
+                                    android:id="@+id/img_open_mast_prof"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="18dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_lock_open_black_24dp"
+                                    android:tint="#00c853" />
+
+                                <ImageButton
+                                    android:id="@+id/img_lock_mast_patch"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="62dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_lock_black_24dp"
+                                    android:tint="#f44336"
+                                    android:visibility="gone" />
+
+                                <ImageButton
+                                    android:id="@+id/img_open_mast_patch"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="62dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_lock_open_black_24dp"
+                                    android:tint="#00c853" />
+
+                                <ImageButton
+                                    android:id="@+id/img_lock_mast_doc"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="68dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_lock_black_24dp"
+                                    android:tint="#f44336"
+                                    android:visibility="gone" />
+
+                                <ImageButton
+                                    android:id="@+id/img_open_mast_doc"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="68dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_lock_open_black_24dp"
+                                    android:tint="#00c853" />
+
+
+                                <ImageButton
+                                    android:id="@+id/img_lock_mast_chem"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="68dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_lock_black_24dp"
+                                    android:tint="#f44336"
+                                    android:visibility="gone" />
+
+                                <ImageButton
+                                    android:id="@+id/img_open_mast_chem"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="68dp"
+                                    android:background="@android:color/transparent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_lock_open_black_24dp"
+                                    android:tint="#00c853" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/vw_mast_form"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.014"
+                                android:background="#FFFFFF" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="05dp"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/txt_mast_prof"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2sp"
+                                    android:layout_marginLeft="0dp"
+                                    android:fontFamily="@string/fontFamily__roboto_regular"
+                                    android:paddingLeft="6dip"
+                                    android:text="PROFILE"
+                                    android:textColor="#000000"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/txt_mast_patch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@string/fontFamily__roboto_regular"
+                                    android:paddingLeft="26dip"
+                                    android:text="PATCH"
+                                    android:textColor="#000000"
+                                    android:textSize="14dp" />
+
+
+                                <TextView
+                                    android:id="@+id/txt_mast_doc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2sp"
+                                    android:layout_marginLeft="15dp"
+                                    android:fontFamily="@string/fontFamily__roboto_regular"
+                                    android:paddingLeft="26dip"
+                                    android:text="DOCTOR"
+                                    android:textColor="#000000"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/txt_mast_chem"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2sp"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@string/fontFamily__roboto_regular"
+                                    android:paddingLeft="26dip"
+                                    android:text="CHEMIST"
+                                    android:textColor="#000000"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/vw_mast_end"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.014"
+                                android:background="#FFFFFF" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+
+                <!--ToDay's Set-Up Section-->
+                <LinearLayout
+                    android:id="@+id/ll_today_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="05dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_today_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/daily_plan_border"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_increment_today_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@string/fontFamily__roboto_regular"
+                            android:gravity="center"
+                            android:text="INCREMENT TODAY TIME"
+                            android:textColor="#00c853"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                        <!--#f44336-->
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+
+                <!--From-To Set-Up Section-->
+                <LinearLayout
+                    android:id="@+id/ll_from_to_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="05dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_from_to_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/daily_plan_border"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_from_to"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@string/fontFamily__roboto_regular"
+                            android:gravity="center"
+                            android:text="UNLOCK FOR FROM-TO DATE"
+                            android:textColor="#00c853"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                        <!--#f44336-->
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+
+                <!--Reset ALL Section-->
+                <LinearLayout
+                    android:id="@+id/ll_reset_all_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="05dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/ll_reset_all_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/daily_plan_border"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_reset_all"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@string/fontFamily__roboto_regular"
+                            android:gravity="center"
+                            android:text="RESET ALL USER"
+                            android:textColor="#f44336"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                        <!--#f44336-->
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+
+                <!--Active User Section-->
+                <LinearLayout
+                    android:id="@+id/ll_active_user_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="05dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_active_user_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/daily_plan_border"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_active_user"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@string/fontFamily__roboto_regular"
+                            android:gravity="center"
+                            android:text="ACTIVE / DEACTIVE USER"
+                            android:textColor="#f44336"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                        <!--#f44336-->
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

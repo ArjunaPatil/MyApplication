@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_nav_home"
+        android:checkableBehavior="single"
+
+        >
+
+        <item
+            android:id="@+id/nav_home"
+
+            android:title="HOME" />
+
+    </group>
+    <!-- <group
+         android:id="@+id/menu_my_objective"
+         android:checkableBehavior="single">
+
+         <item
+             android:id="@+id/nav_my_objective"
+             android:title="TODAY OBJECTIVE" />
+
+     </group>-->
+
+    <group
+        android:id="@+id/menu_profile"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_my_profile"
+            android:title="MY PROFILE" />
+
+    </group>
+    <group
+        android:id="@+id/menu_doctor_call"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_doctor_call"
+            android:title="DOCTOR CALL" />
+
+    </group>
+    <group
+        android:id="@+id/menu_chemist_call"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_chemist_call"
+            android:title="CHEMIST CALL" />
+    </group>
+
+    <group
+        android:id="@+id/menu_campaign_booking"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_campaign_booking"
+            android:title="CAMPAIGN BOOKING" />
+    </group>
+
+
+    <!--<group
+        android:id="@+id/menu_reports"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_reports"
+            android:title="REPORTS" />
+
+    </group>-->
+
+    <group
+        android:id="@+id/menu_doctor_list"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_doctor_list"
+            android:title="DOCTOR LIST" />
+    </group>
+
+    <group
+        android:id="@+id/menu_doctor_activity"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_doctor_activity"
+            android:title="ACTIVE/CAMPAIGN DR." />
+    </group>
+
+    <group
+        android:id="@+id/menu_patch_list"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_patch_list"
+            android:title="PATCH LIST" />
+    </group>
+
+    <group
+        android:id="@+id/menu_chemist_list"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_chemist_list"
+            android:title="CHEMIST LIST" />
+    </group>
+
+    <group
+        android:id="@+id/menu_stockist_list"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_stockist_list"
+            android:title="STOCKIST LIST" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_hierarchy_list"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_hierarchy_list"
+            android:title="HIERARCHY LIST" />
+    </group>
+
+    <group
+        android:id="@+id/menu_headquarter_list"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_headquarter_list"
+            android:title="HEADQUARTER LIST" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_location"
+        android:checkableBehavior="single"
+        android:visible="false">
+        <item
+            android:id="@+id/nav_location"
+            android:title="LOCATION" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_user_list"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_user_list"
+            android:title="USER LIST" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_gallery"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="GALLERY" />
+
+    </group>
+
+    <!--android:visible="false"-->
+    <group
+        android:id="@+id/menu_upload"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_upload"
+            android:title="UPLOAD" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_location_on_map"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_location_on_map"
+            android:title="LOCATION ON MAP" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_primary_on_app"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_primary_on_app"
+            android:title="PRIMARY" />
+    </group>
+
+    <group
+        android:id="@+id/menu_check_update"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_check_update"
+            android:title="UPDATE VERSION" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_test_list"
+        android:checkableBehavior="single"
+        android:visible="false">
+        <item
+            android:id="@+id/nav_test_list"
+            android:title="TEST LIST"
+            android:visible="false" />
+
+    </group>
+    <!-- <group
+         android:id="@+id/menu_user"
+         android:checkableBehavior="single">
+         <item
+             android:id="@+id/nav_user"
+             android:title="USER ADMIN" />
+
+     </group>
+ -->
+
+
+</menu>

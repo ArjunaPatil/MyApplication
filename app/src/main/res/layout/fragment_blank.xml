@@ -1,0 +1,507 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vin.myapplication.BlankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2962ff"
+        android:text="Background Sync Status"
+        android:textAlignment="center"
+        android:textColor="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mycustom_toast_border_glass"
+                android:orientation="vertical"
+               android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_horizontal"
+                    android:text="Your Work Sync (CALL/MEETING etc)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/txt_Live_work_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="6.5"
+                        android:gravity="left"
+                        android:textColor="#FFFFFF"
+                        android:text="dd"
+                        android:textSize="15dp"
+                        android:textStyle="italic" />
+
+
+                    <TextView
+                        android:id="@+id/txt_Live_work_count"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="3.5"
+                        android:gravity="right"
+                        android:textColor="#FFFFFF"
+                        android:text="000000"
+                        android:textSize="15dp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <Button
+                        android:id="@+id/btn_clear_live_work"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_weight="6"
+                        android:background="#3F51B5"
+                        android:text="Reload Data "
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:text=" " />
+
+                    <ImageView
+                        android:id="@+id/img_check_live_work"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_done_all_black_48dp"
+
+                        android:tint="#3F51B5" />
+                </LinearLayout>
+
+
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/mycustom_toast_border_glass"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_horizontal"
+                    android:text="Team Data Sync"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/txt_Employee_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="6.5"
+                        android:gravity="left"
+                        android:text="dd"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="italic" />
+
+
+                    <TextView
+                        android:id="@+id/txt_Employee_count"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="3.5"
+                        android:gravity="right"
+                        android:textColor="#FFFFFF"
+                        android:text="000000"
+                        android:textSize="15dp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <Button
+                        android:id="@+id/btn_clear_Employee"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_weight="6"
+                        android:text="Reload Data "
+                        android:background="#3F51B5"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:text=" " />
+
+                    <ImageView
+                        android:id="@+id/img_check_employee"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_done_all_black_48dp"
+
+                        android:tint="#3F51B5" />
+                </LinearLayout>
+
+                <!--    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="0dp"
+                        android:background="@android:color/darker_gray" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mycustom_toast_border_glass"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_horizontal"
+                    android:text="Doctor Data Sync"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/txt_Doctor_Master_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="6.5"
+                        android:gravity="left"
+                        android:textColor="#FFFFFF"
+                        android:text="dd"
+                        android:textSize="15dp"
+                        android:textStyle="italic" />
+
+
+                    <TextView
+                        android:id="@+id/txt_Doctor_Master_count"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="3.5"
+                        android:gravity="right"
+                        android:textColor="#FFFFFF"
+                        android:text="000000"
+                        android:textSize="15dp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <Button
+                        android:id="@+id/btn_clear_Doctor_Master"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_weight="6"
+                        android:text="Reload Data "
+                        android:background="#3F51B5"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:text=" " />
+
+                    <ImageView
+                        android:id="@+id/img_check_Doctor_Master"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_done_all_black_48dp"
+
+                        android:tint="#3F51B5" />
+                </LinearLayout>
+
+                <!--    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="0dp"
+                        android:background="@android:color/darker_gray" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mycustom_toast_border_glass"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_horizontal"
+                    android:text="Patch Sync"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+
+                    <TextView
+                        android:id="@+id/txt_Patch_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="6.5"
+                        android:gravity="left"
+                        android:text="dd"
+                        android:textSize="15dp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="italic" />
+
+
+                    <TextView
+                        android:id="@+id/txt_Patch_count"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="3.5"
+                        android:gravity="right"
+                        android:text="000000"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <Button
+                        android:id="@+id/btn_clear_Patch"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_weight="6"
+                        android:background="#3F51B5"
+                        android:text="Reload Data "
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:text=" " />
+
+                    <ImageView
+                        android:id="@+id/img_check_Patch"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_done_all_black_48dp"
+
+                        android:tint="#3F51B5" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mycustom_toast_border_glass"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_horizontal"
+                    android:text="App Version Sync"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+
+                    <TextView
+                        android:id="@+id/txt_AppVersions_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="6.5"
+                        android:gravity="left"
+                        android:textColor="#FFFFFF"
+                        android:text="dd"
+                        android:textSize="15dp"
+                        android:textStyle="italic" />
+
+
+                    <TextView
+                        android:id="@+id/txt_AppVersions_count"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="3.5"
+                        android:gravity="right"
+                        android:textColor="#FFFFFF"
+                        android:text="000000"
+                        android:textSize="15dp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <Button
+                        android:id="@+id/btn_clear_AppVersions"
+                        android:layout_width="0dp"
+                        android:layout_height="28dp"
+                        android:layout_weight="6"
+                        android:background="#3F51B5"
+                        android:text="Reload Data "
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:text=" " />
+
+                    <ImageView
+                        android:id="@+id/img_check_AppVersions"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_done_all_black_48dp"
+
+                        android:tint="#3F51B5" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:textColor="#f44336"
+                android:textSize="17dp"
+                android:text=""
+                android:id="@+id/txt_msg"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

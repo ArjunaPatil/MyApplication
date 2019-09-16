@@ -1,0 +1,245 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vin.myapplication.fragment_insert_patch_master_1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="(*)Indicates Mandatory Fields"
+                android:textColor="#b71c1c"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Patch Name:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#b71c1c"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Patch Name" />-->
+
+            <EditText
+                android:id="@+id/edit_patch_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Patch Km from HQ:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#b71c1c"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Patch Km from HQ:"></TextView>-->
+
+            <TextView
+                android:id="@+id/txt_hq_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""></TextView>
+
+            <EditText
+                android:id="@+id/edit_patch_km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Patch Type" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#b71c1c"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Patch Type" />-->
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_HQ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="HQ" />
+
+                <RadioButton
+                    android:id="@+id/radio_EXHQ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="EX.HQ" />
+
+
+                <RadioButton
+                    android:id="@+id/radio_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Out" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_add_patch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:background="#4caf50"
+                    android:text="ADD"
+                    android:textColor="#FFFFFF" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Patch Of"></TextView>
+
+            <TextView
+                android:id="@+id/txt_emp_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""></TextView>
+
+            <TextView
+                android:id="@+id/txt_emp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""></TextView>
+
+            <TextView
+                android:id="@+id/txt_patch_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""></TextView>
+
+            <Button
+                android:id="@+id/btn_delete_patch"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:background="#f44336"
+                android:text="DELETE"
+
+                android:textColor="#FFFFFF" />
+
+          <!--  <LinearLayout
+                android:id="@+id/linear_layout_doc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Doctors In Patch"></TextView>
+
+                <TextView
+                    android:id="@+id/txt_count_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btn_add_update_doc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:background="#4caf50"
+                        android:text="ADD DOCTOR IN THIS PATCH"
+                        android:textColor="#FFFFFF" />
+
+
+                </LinearLayout>
+            </LinearLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

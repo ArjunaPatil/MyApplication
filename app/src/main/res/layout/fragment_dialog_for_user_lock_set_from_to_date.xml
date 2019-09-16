@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginBottom="10.0dip"
+        android:orientation="horizontal"
+        android:paddingBottom="1.0dip"
+        android:paddingLeft="4.0dip"
+        android:paddingRight="4.0dip"
+        android:paddingTop="5.0dip">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_rounded_blue"
+            android:text="BACK" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_rounded_blue"
+            android:text="UPDATE" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_gravity="fill_horizontal" />
+
+    <TextView
+        android:id="@+id/txt_test"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="User Name: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Status : "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/daily_plan_border"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="00dp"
+                    android:fontFamily="@string/fontFamily__roboto_regular"
+                    android:gravity="center"
+                    android:text="UNLOCK FOR DATE RANGE"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.014"
+                    android:background="#FFFFFF" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.014"
+                    android:background="#FFFFFF" />
+
+                <LinearLayout
+                    android:id="@+id/ll_master_lock_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switch_trans_obj_time"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:gravity="left"
+                            android:text="OBJECTIVE TIME"
+                            android:textOff="Unlock"
+                            android:textOn="Lock" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vw_trans_obj_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switch_trans_doc_time"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:gravity="left"
+                            android:text="DOCTOR TIME"
+                            android:textOff="Unlock"
+                            android:textOn="Lock" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vw_trans_doc_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switch_trans_che_time"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:gravity="left"
+                            android:text="CHEMIST TIME"
+                            android:textOff="Unlock"
+                            android:textOn="Lock" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vw_trans_che_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <LinearLayout
+                        android:id="@+id/select_from_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.3" />
+
+                        <TextView
+                            android:id="@+id/select_from_date1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_weight="0.7"
+                            android:text="FROM DATE:"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/txt_plan_of_from_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="yyyy/mm/dd"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+
+                        <ImageButton
+                            android:id="@+id/select_from_date3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_expand_more_black_48dp"
+                            android:tint="#000000" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vw_from_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <LinearLayout
+                        android:id="@+id/select_to_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.257" />
+
+                        <TextView
+                            android:id="@+id/select_to_date1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_weight="0.915"
+                            android:text="TO DATE:"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/txt_plan_of_to_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="yyyy/mm/dd"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+
+                        <!--android:textStyle="bold"-->
+
+                        <ImageButton
+                            android:id="@+id/select_to_date3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_expand_more_black_48dp"
+                            android:tint="#000000" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

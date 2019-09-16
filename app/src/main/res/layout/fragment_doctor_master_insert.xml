@@ -1,0 +1,1079 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vin.myapplication.fragment_doctor_master_insert">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="3dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="5dp"
+                android:layout_weight=".8"
+                android:paddingLeft="5dp"
+                android:text="(*)Indicates Mandatory Fields"
+                android:textColor="#E32636"
+                android:textSize="10sp" />
+
+
+            <Button
+                android:id="@+id/btn_save_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:background="#4caf50"
+                android:text="SAVE"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+                <!--android:background="#00897b"-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Doctor Name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:text="*"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/txt_doctor_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:height="35dp"
+                    android:background="@drawable/mycustom_border_background_shade300"
+                    android:paddingLeft="3dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:text="PATCH" />
+                <!--android:text="SELECT PATCH"-->
+                <LinearLayout
+                    android:id="@+id/select_patch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/select_patch_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/select_patch_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@string/fontFamily__roboto_regular"
+                            android:gravity="left"
+                            android:text=" Select"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+                        <!--android:text=" Select Patch"-->
+                        <ImageButton
+                            android:id="@+id/select_patch_3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="8dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_expand_more_black_48dp"
+                            android:tint="#000000" />
+
+                        <TextView
+                            android:id="@+id/name_select_patch"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:paddingLeft="6dip"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Patch:"
+                    android:textColor="#000"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_patch_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="#000"></TextView>-->
+
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="HeadQuarter:"></TextView>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_headquarter"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:paddingLeft="3dp"-->
+                <!--android:height="35dp"-->
+                <!--android:text="-"-->
+                <!--android:textColor="#000"-->
+                <!--android:background="@drawable/mycustom_border_background_shade300"></TextView>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="DEGREE" />
+                    <!--android:text="SELECT DEGREE"-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/select_degree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/select_degree_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/select_degree_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@string/fontFamily__roboto_regular"
+                            android:gravity="left"
+                            android:text=" Select"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+                        <!--android:text=" Select Degree"-->
+
+                        <ImageButton
+                            android:id="@+id/select_degree_3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="8dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_expand_more_black_48dp"
+                            android:tint="#000000" />
+
+                        <TextView
+                            android:id="@+id/name_select_degree"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:paddingLeft="6dip"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Degree"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <Spinner
+                    android:id="@+id/spinner_degree"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/spinner_title" />-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="DOCTOR SPECIALIZATION" />
+
+                    <!--android:text="SELECT DOCTOR SPECIALIZATION"-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/select_doctor_specialization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/select_doctor_specialization_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/select_doctor_specialization_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@string/fontFamily__roboto_regular"
+                            android:gravity="left"
+                            android:text=" SELECT"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+                        <!--android:text=" SELECT SPECIALIZATION"-->
+                        <ImageButton
+                            android:id="@+id/select_doctor_specialization_3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="8dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_expand_more_black_48dp"
+                            android:tint="#000000" />
+
+                        <TextView
+                            android:id="@+id/name_select_doctor_specialization"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:paddingLeft="6dip"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Doctor Specialization"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinner_doctor_specialization"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/spinner_title"
+                    android:textColor="#FFFFFF"/>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="DOCTOR TYPE" />
+
+                    <!--android:text="SELECT DOCTOR TYPE"-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/select_doctor_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/select_doctor_type_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/select_doctor_type_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@string/fontFamily__roboto_regular"
+                            android:gravity="left"
+                            android:text=" SELECT"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <!--android:text=" SELECT TYPE"-->
+
+                        <ImageButton
+                            android:id="@+id/select_doctor_type_3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="8dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_expand_more_black_48dp"
+                            android:tint="#000000" />
+
+                        <TextView
+                            android:id="@+id/name_select_doctor_type"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:paddingLeft="6dip"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Doctor Type"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinner_doctor_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/spinner_title"
+                    android:textColor="#FFFFFF"/>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Hospital Name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:text="*"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/txt_hospital_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:height="35dp"
+                    android:background="@drawable/mycustom_border_background_shade300"
+                    android:paddingLeft="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Reg No" />
+
+                <EditText
+                    android:id="@+id/txt_reg_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:height="35dp"
+                    android:background="@drawable/mycustom_border_background_shade300"
+                    android:paddingLeft="3dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Address" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:text="*"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/txt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:height="35dp"
+                    android:background="@drawable/mycustom_border_background_shade300"
+                    android:paddingLeft="3dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="City" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:text="*"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/txt_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:height="35dp"
+                    android:background="@drawable/mycustom_border_background_shade300"
+                    android:paddingLeft="3dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Pin Code" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:text="*"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/txt_pin_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:height="35dp"
+                    android:background="@drawable/mycustom_border_background_shade300"
+                    android:inputType="number"
+                    android:paddingLeft="3dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Per Mobile" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:text="*"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/txt_per_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:height="35dp"
+                    android:background="@drawable/mycustom_border_background_shade300"
+                    android:inputType="number"
+                    android:paddingLeft="3dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Per Phone" />
+
+                <EditText
+                    android:id="@+id/txt_per_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:height="35dp"
+                    android:background="@drawable/mycustom_border_background_shade300"
+                    android:inputType="number"
+                    android:paddingLeft="3dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Email" />
+
+                <EditText
+                    android:id="@+id/txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:height="35dp"
+                    android:background="@drawable/mycustom_border_background_shade300"
+                    android:paddingLeft="3dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:text="PRODUCTS SUGGEST" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="*"
+                        android:textColor="#ff0000"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/actirab_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ACTIRAB TAB"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/actirab_d_cap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ACTIRAB - D CAP"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/actirab_dv_cap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ACTIRAB - DV CAP"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/actirab_l_cap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ACTIRAB - L CAP"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/empower_od_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="EMPOWER - OD TAB"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/stand_sp_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="STAND - SP TAB"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/star_t_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="STAR T TAB"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/glucolyst_g1_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="GLUCOLYST - G1 TAB"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/lycorest_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="LYCOREST TAB"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/lycort_1ml_inj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="LYCORT 1ml INJ"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/regain_xt_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="REGAIN - XT TAB"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/lycorest_60ml_susp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="LYCOREST 60ml SUSP"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/lycolic_10ml_drops"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="LYCOLIC 10ml DROPS"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/stand_mf_60ml_susp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="STAND - MF 60ml SUSP"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/ten_n_30ml_syrup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="TEN - ON 30ml SYRUP"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/wego_gel_20_mg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="WEGO GEL 20 MG"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/wego_gel_30_mg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="WEGO GEL 30 MG"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/trygesic_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="TRYGESIC TAB"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <!--Date 08/05/2018 new branch product-->
+                <CheckBox
+                    android:id="@+id/itezone_200_cap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ITEZONE 200 CAP"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/nextvit_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="NEXTVIT TAB"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <!--Date 27/04/2018 new branch product-->
+                <!--Date 27/04/2018 new branch product-->
+
+                <CheckBox
+                    android:id="@+id/trygesic_ptab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="TRYGESIC -P"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/cipgrow_syrup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CIPGROW SYRUP"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/clavyten_625"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CLAVYTEN 625"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/levocast_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="LEVOCAST - M"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/altipan_dsr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ALTIPAN - DSR"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/sangria_tonic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="SANGRIA TONIC"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/onederm_cream"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ONEDERM CREAM"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/actirest_ls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ACTIREST - LS"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/actirest_dx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ACTIREST - DX"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/korby_soap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="KORBY SOAP"
+                    android:textColor="#000"
+                    android:visibility="gone" />
+
+                <!--<LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btn_add_doc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:background="#4caf50"
+                        android:text="Next"
+                        android:textColor="#FFFFFF" />
+
+
+                </LinearLayout>-->
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="DOCTOR OF"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_user_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:height="35dp"
+                    android:background="@drawable/mycustom_border_background_shade300"
+                    android:paddingLeft="3dp"
+                    android:text=""
+                    android:textColor="#000"></TextView>
+
+
+                <TextView
+                    android:id="@+id/tv_doc_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000"
+                    android:visibility="gone"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000"
+                    android:visibility="gone"></TextView>
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DOCTOR Of"
+                    android:textColor="#FFFFFF"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_emp_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#FFFFFF"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_emp_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#FFFFFF"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_doc_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#FFFFFF"></TextView>-->
+
+                <!--<Button
+                    android:id="@+id/btn_delete_patch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:background="#f44336"
+                    android:text="DELETE"
+                    android:textColor="#FFFFFF" />-->
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

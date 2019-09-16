@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_patch_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="patch"
+        android:textColor="#ff7043"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+
+         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+
+
+    <Button
+        android:id="@+id/btn_view_edit_patch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#ff7043"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        android:text="VIEW /EDIT PATCH" />
+
+    <Button
+        android:id="@+id/btn_view_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff7043"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="VIEW DR IN THIS PATCH" />
+
+    <Button
+        android:id="@+id/btn_view_edit_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff7043"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="ADD / EDIT DOCTOR IN THIS PATCH" />
+
+</LinearLayout>

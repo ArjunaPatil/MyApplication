@@ -1,0 +1,256 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vin.myapplication.fragment_daily_plan_insert_1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efebe9"
+        android:orientation="vertical">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#efebe9"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Employee:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txt_plan_of_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="#efebe9"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/mycustom_border_background_shade400"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:id="@+id/chkBoxDCR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="80dp"
+                        android:text="PROFILE UPDATE"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/mycustom_border_background_shade300"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/chkBoxcme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="80dp"
+                        android:text="PATCH MASTER"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.0dp"
+                    android:background="@drawable/mycustom_border_background_shade200"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/chkBoxcamp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="80dp"
+                        android:text="DOCTOR MASTER"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.0dp"
+                    android:background="@drawable/mycustom_border_background_shade100"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/chkBoxmeeting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="80dp"
+                        android:text="CHEMIST MASTER"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="#efebe9"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@string/fontFamily__roboto_condensed"
+                        android:gravity="center"
+                        android:text="CHOOSE FROM ABOVE OPTIONS  AND CLICK NEXT TO SUBMIT YOUR PLAN"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/btn_submit1"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/button_rounded_blue"
+                        android:gravity="center"
+                        android:text="NEXT"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/mycustom_border_background_shade50"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/chkBoxleave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="0dp"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:gravity="right"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="5dp"
+                        android:text="LEAVE APPLY  "
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="#efebe9"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@string/fontFamily__roboto_condensed"
+                        android:gravity="center"
+                        android:text="IF YOUR PLAN IS TAKE LEAVE THEN SELECT THE ABOVE OPTION(LEAVE APPLY) AND CLICK ON NEXT"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/btn_submit2"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button_rounded_blue"
+                        android:gravity="center"
+                        android:text="NEXT"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

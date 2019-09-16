@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginBottom="10.0dip"
+        android:orientation="horizontal"
+        android:paddingBottom="1.0dip"
+        android:paddingLeft="4.0dip"
+        android:paddingRight="4.0dip"
+        android:paddingTop="5.0dip">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_rounded_blue"
+            android:text="BACK" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_rounded_blue"
+            android:text="SET" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_gravity="fill_horizontal" />
+
+    <TextView
+        android:id="@+id/txt_test"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/daily_plan_border"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="00dp"
+                    android:fontFamily="@string/fontFamily__roboto_regular"
+                    android:gravity="center"
+                    android:text="SET FILTER FOR USER LIST"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.014"
+                    android:background="#FFFFFF" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.014"
+                    android:background="#FFFFFF" />
+
+                <LinearLayout
+                    android:id="@+id/ll_user_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switch_user_all"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:gravity="left|center_vertical"
+                            android:text="ALL USER'S"
+                            android:textOff="UNCHECK"
+                            android:textOn="CHECK" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vw_user_user_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switch_user_active"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:gravity="left|center_vertical"
+                            android:text="ONLY ACTIVE USER'S"
+                            android:textOff="UNCHECK"
+                            android:textOn="CHECK" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vw_user_user_active"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switch_user_master_unlock"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:gravity="left|center_vertical"
+                            android:text="ONLY MASTER FORM UNLOCKED USER'S"
+                            android:textOff="UNCHECK"
+                            android:textOn="CHECK" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vw_user_master_unlock"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switch_user_trans_unlock"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:gravity="left|center_vertical"
+                            android:text="ONLY TRANS FORM UNLOCKED USER'S"
+                            android:textOff="UNCHECK"
+                            android:textOn="CHECK" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vw_user_trans_unlock"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.014"
+                        android:background="#FFFFFF" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dip"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</LinearLayout>

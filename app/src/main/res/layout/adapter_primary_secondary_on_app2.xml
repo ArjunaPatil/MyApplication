@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/activity_live__work"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Stockist Name Product List-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/mycustom_border_background_for_prim_seco_app_2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_txt_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-3dp"
+                android:gravity="center"
+                android:text="product name"
+                android:textAlignment="center"
+                android:textColor="@color/cast_intro_overlay_background_color"
+                android:textSize="15dp"
+                android:textStyle="bold" /><!--weight0.60 textsize 15-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp"><!--android:padding="4dp"-->
+
+                <!--android:id="@+id/tv_txt_product_name"-->
+                <TextView
+                    android:id="@+id/tv_lbl_product_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:layout_weight="0.05"
+                    android:gravity="center"
+                    android:text="Sale(Qty)"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="12dp"
+                    android:textStyle="bold" /><!--weight0.60 textsize 15-->
+
+                <TextView
+                    android:id="@+id/tv_lbl_product_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="-3dp"
+                    android:layout_weight="0.58"
+                    android:gravity="right"
+                    android:text="Return(qty)"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" /><!--weight1.00 textsize 15-->
+
+
+                <TextView
+                    android:id="@+id/tv_lbl_product_tot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="-3dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Total"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" /><!--weight1.00 textsize 15-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp"><!--android:padding="4dp"-->
+
+                <!--android:id="@+id/tv_txt_product_name"-->
+                <TextView
+                    android:id="@+id/tv_txt_product_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-3dp"
+                    android:layout_weight="0.05"
+                    android:gravity="center"
+                    android:text="Sale(Qty)"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="12dp" /><!--weight0.60 textsize 15-->
+
+                <TextView
+                    android:id="@+id/tv_txt_product_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="-3dp"
+                    android:layout_weight="0.58"
+                    android:gravity="right"
+                    android:text="Return(Qty)"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="12sp" /><!--weight1.00 textsize 15-->
+
+
+                <TextView
+                    android:id="@+id/tv_txt_product_tot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="-3dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Total"
+                    android:textColor="@color/cast_intro_overlay_background_color"
+                    android:textSize="12sp" /><!--weight1.00 textsize 15-->
+            </LinearLayout>
+
+            <!--<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="7dp"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/tv_lbl_emp_abm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dp"
+        android:text="ABM:"
+        android:textColor="@color/cast_intro_overlay_background_color"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_txt_emp_abm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="-3dp"
+        android:text="Pramod Ambi"
+        android:textColor="@color/cast_intro_overlay_background_color"
+        android:textSize="15sp" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-7dp"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/tv_lbl_emp_rbm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dp"
+        android:text="RBM:"
+        android:textColor="@color/cast_intro_overlay_background_color"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_txt_emp_rbm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="-3dp"
+        android:text="Amol Mohite"
+        android:textColor="@color/cast_intro_overlay_background_color"
+        android:textSize="15sp" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-7dp"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/tv_lbl_emp_sm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dp"
+        android:text="SM:"
+        android:textColor="@color/cast_intro_overlay_background_color"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_txt_emp_sm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="-3dp"
+        android:text="AAAAAAAAA AAAAAAAAAA"
+        android:textColor="@color/cast_intro_overlay_background_color"
+        android:textSize="15sp" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-7dp"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/tv_lbl_emp_nbm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dp"
+        android:text="NBM:"
+        android:textColor="@color/cast_intro_overlay_background_color"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_txt_emp_nbm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-3dp"
+        android:text="AAAAAAAAA AAAAAAAAAA"
+        android:textColor="@color/cast_intro_overlay_background_color"
+        android:textSize="15sp" />
+
+</LinearLayout>-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

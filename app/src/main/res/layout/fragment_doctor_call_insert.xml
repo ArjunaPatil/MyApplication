@@ -1,0 +1,1203 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vin.myapplication.fragment_doctor_call_insert">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/transitions_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <!--android:background="#00897b" below layout-->
+        <LinearLayout
+            android:id="@+id/linear_layout_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.8"
+            android:background="#00897b"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/planning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/mycustom_toast_border_white"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="6dip"
+                                    android:text=" Doctor Degree|Specialization:"
+                                    android:textColor="#3F51B5"
+                                    android:textSize="10sp"
+                                    android:textStyle="normal" />
+
+
+                                <TextView
+                                    android:id="@+id/tvdoctor_degree_specialization"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="6dip"
+                                    android:textColor="#3F51B5"
+                                    android:textSize="10sp"
+                                    android:textStyle="normal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="6dip"
+                                    android:text=" Mobile NO:"
+                                    android:textColor="#3F51B5"
+                                    android:textSize="10sp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:id="@+id/tvdoctormobileno"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="6dip"
+                                    android:textColor="#3F51B5"
+                                    android:textSize="10sp"
+                                    android:textStyle="normal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="6dip"
+                                    android:text=" Address:"
+                                    android:textColor="#3F51B5"
+                                    android:textSize="10sp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:id="@+id/tvdoctor_address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="6dip"
+                                    android:textColor="#3F51B5"
+                                    android:textSize="10sp"
+                                    android:textStyle="normal" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/dcr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#FFFFFF" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_actirab_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="5dp"
+                                    android:text="ACTIRAB TAB"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_actirab_tab"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_actirab_d_cap"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:text="ACTIRAB-D CAP"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_actirab_d_cap"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_actirab_l_cap"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="5dp"
+                                    android:text="ACTIRAB-L CAP"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_actirab_l_cap"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_empower_od_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:text="EMPOWER-OD TAB"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_empower_od_tab"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_stand_sp_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="5dp"
+                                    android:text="STAND-SP TAB"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_stand_sp_tab"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_star_t_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:text="STAR T TAB"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_star_t_tab"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_glucolyst_g1_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="5dp"
+                                    android:text="GLUCOLYST-G1 TAB"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_glucolyst_g1_tab"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_lycorest_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:text="LYCOREST TAB"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_lycorest_tab"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_lycort_1ml_inj"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="5dp"
+                                    android:text="LYCORT 1ml INJ"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_lycort_1ml_inj"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_regain_xt_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:text="REGAIN-XT TAB"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_regain_xt_tab"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_lycorest_60ml_susp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="5dp"
+                                    android:text="LYCOREST 60ml SUSP"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_lycorest_60ml_susp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_lycolic_10ml_drops"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:text="LYCOLIC 10ml DROPS"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_lycolic_10ml_drops"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_stand_mf_60ml_susp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="5dp"
+                                    android:text="STAND-MF 60ml SUSP"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_stand_mf_60ml_susp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_ten_n_30ml_syrup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:text="TEN-ON 30ml SYRUP"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_ten_on_30ml_syrup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_wego_gel_20_mg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="5dp"
+                                    android:text="WEGO GEL 20 MG"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_wego_gel_20_mg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_wego_gel_30_mg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:text="WEGO GEL 30 MG"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_wego_gel_30_mg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_trygesic_tab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="invisible">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="5dp"
+                                    android:text="TRYGESIC TAB"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+
+                                <EditText
+                                    android:id="@+id/txt_trygesic_tab"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="5dp"
+                                    android:width="200dp"
+                                    android:gravity="right"
+                                    android:inputType="number"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#FFFFFF" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/edit_planning"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btn_next"
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:layout_margin="5dp"
+                                android:background="#ff7043"
+                                android:gravity="center"
+                                android:text="SAVE"
+                                android:textColor="#FFFFFF" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_doc_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_plan_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_employee_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/mycustom_toast_border_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+             <TextView
+                 android:id="@+id/work_type"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:visibility="visible" />&ndash;&gt;
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:text=" Doctor Degree|Specialization:"
+                android:textColor="#3F51B5"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/tvdoctor_degree_specialization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:textColor="#3F51B5"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/employee_designation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:textColor="#3F51B5"
+                android:textSize="10sp"
+                android:textStyle="normal" />&ndash;&gt;
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:text=" Mobile NO:"
+                android:textColor="#3F51B5"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tvdoctormobileno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:textColor="#3F51B5"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:text=" Address:"
+                android:textColor="#3F51B5"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tvdoctor_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                android:textColor="#3F51B5"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray" />-->
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor Name"
+                 />
+
+            <EditText
+                android:id="@+id/edit_doctor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Patch:"></TextView>
+            <TextView
+                android:id="@+id/txt_patch_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"></TextView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Degree" />
+            <Spinner
+                android:id="@+id/spinner_degree"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor Specialization" />
+
+            <Spinner
+                android:id="@+id/spinner_doctor_specialization"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor Type" />
+
+            <Spinner
+                android:id="@+id/spinner_doctor_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_title" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hospital Name" />
+
+            <EditText
+                android:id="@+id/edit_hospital_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reg No" />
+            <EditText
+                android:id="@+id/edit_reg_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address" />
+            <EditText
+                android:id="@+id/edit_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City" />
+            <EditText
+                android:id="@+id/edit_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pin Code"
+                />
+
+            <EditText
+                android:id="@+id/edit_pin_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Per Mobile"
+               />
+            <EditText
+                android:id="@+id/edit_per_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Per Phone"
+                />
+
+            <EditText
+                android:id="@+id/edit_per_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                />
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               />
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRODUCTS SUGGEST" />
+
+            <CheckBox
+                android:text="ACTIRAB TAB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/actirab_tab"
+                />
+            <CheckBox
+                android:text="ACTIRAB - D CAP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/actirab_d_cap"
+                />
+            <CheckBox
+                android:text="ACTIRAB - L CAP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/actirab_l_cap"
+                />
+            <CheckBox
+                android:text="EMPOWER - OD TAB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/empower_od_tab"
+                />
+            <CheckBox
+                android:text="STAND - SP TAB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/STAND_SP_TAB"
+                />
+            <CheckBox
+                android:text="STAR T TAB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/STAR_T_TAB"
+                />
+            <CheckBox
+                android:text="GLUCOLYST - G1 TAB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/glucolyst_g1_tab"
+                />
+            <CheckBox
+                android:text="LYCOREST TAB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/lycorest_tab"
+                />
+            <CheckBox
+                android:text="LYCORT 1ml INJ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/lycort_1ml_inj"
+                />
+            <CheckBox
+                android:text="REGAIN - XT TAB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/regain_xt_tab"
+                />
+            <CheckBox
+                android:text="LYCOREST 60ml SUSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/lycorest_60ml_susp"
+                />
+            <CheckBox
+                android:text="LYCOLIC 10ml DROPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/lycolic_10ml_drops"
+                />
+
+            <CheckBox
+                android:text="STAND - MF 60ml SUSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/stand_mf_60ml_susp"
+                />
+            <CheckBox
+                android:text="TEN - ON 30ml SYRUP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/ten_n_30ml_syrup"
+                />
+            <CheckBox
+                android:text="WEGO GEL 20 MG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/wego_gel_20_mg"
+                />
+            <CheckBox
+                android:text="WEGO GEL 30 MG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/wego_gel_30_mg"
+                />
+            <CheckBox
+                android:text="TRYGESIC TAB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/trygesic_tab"
+                />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_add_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:background="#4caf50"
+                    android:text="Next"
+                    android:textColor="#FFFFFF" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DOCTOR Of"></TextView>
+
+            <TextView
+                android:id="@+id/txt_emp_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""></TextView>
+
+            <TextView
+                android:id="@+id/txt_emp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""></TextView>
+
+            <TextView
+                android:id="@+id/txt_doc_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""></TextView>
+
+            <Button
+                android:id="@+id/btn_delete_patch"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:background="#f44336"
+                android:text="DELETE"
+
+                android:textColor="#FFFFFF" />
+
+
+
+        </LinearLayout>
+    </ScrollView>-->
+</FrameLayout>
